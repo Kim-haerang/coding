@@ -202,6 +202,7 @@
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
 
-- 풀이: 신호등 주기들의 LCM 범위 내에서 브루트포스
-- 배운 점: C++17 `<numeric>`의 `lcm()` 내장 함수, 1-indexed 시간 처리 시 `(t-1) % cycle`
-- 실수: 탐색 범위를 하드코딩하면 LCM 밖의 케이스에서 틀림
+
+ 풀이: 신호등 주기들의 LCM 범위 내에서 브루트포스
+ 배운 점: C++17 `<numeric>`의 `lcm()` 내장 함수, 1-indexed 시간 처리 시 `(t-1) % cycle`
+ 실수: 탐색 범위를 하드코딩하면 LCM 밖의 케이스에서 틀림
