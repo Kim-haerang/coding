@@ -75,3 +75,8 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+---
+-풀이: participant와 completion을 map에 등록/차감 후 count가 남은 사람 반환
+-배운 점: sort로도 풀 수 있지만 해시 문제인 만큼 map이 의도된 풀이 / sort 풀이는 양쪽 다 정렬하면 어긋나는 순간이 미완주자인 원리 / 미완주자가 정확히 1명이라는 조건이 있기 때문에 두 풀이 모두 성립
+-실수: for문 순회를 participant.size()로 해서 completion[i] 범위 초과 → completion.size()로 순회해야 함
