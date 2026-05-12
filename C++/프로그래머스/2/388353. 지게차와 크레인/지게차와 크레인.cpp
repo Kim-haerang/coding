@@ -19,7 +19,6 @@ int solution(vector<string> storage, vector<string> requests) {
     for (auto& r : requests) {
         char target = r[0];
 
-        // 크레인: 해당 문자 전체 제거
         if (r.size() == 2) {
             for (auto& row : grid) {
                 for (auto& c : row) {
@@ -27,7 +26,6 @@ int solution(vector<string> storage, vector<string> requests) {
                 }
             }
         }
-        // 지게차: 현재 외부에서 접근 가능한 target만 제거
         else {
             queue<pair<int, int>> q;
             vector<vector<bool>> visited(n + 2, vector<bool>(m + 2, false));
@@ -57,18 +55,15 @@ int solution(vector<string> storage, vector<string> requests) {
                     }
                 }
             }
-
             for (auto [y, x] : toRemove) {
                 grid[y][x] = '.';
             }
         }
     }
-
     for (auto& row : grid) {
         for (char c : row) {
             if (c != '.') answer++;
         }
     }
-
     return answer;
 }
