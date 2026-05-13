@@ -97,3 +97,16 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+---
+풀이: 
+
+- name과 yearning을 map에 등록 후 각 사진 속 인물의 그리움 점수 합산
+
+배운 점: 
+
+- map에 없는 키는 자동으로 0 반환되어 별도 처리 불필요
+
+실수: 
+
+- 내부 for문을 name.size() 기준으로 순회 → photo 속 인물 기준으로 순회해야 함
