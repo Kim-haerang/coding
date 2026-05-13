@@ -300,3 +300,14 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+---
+풀이: 
+
+- queue에 서버 증설 시간 저장
+- k시간 지난 서버는 pop
+- 현재 이용자가 (queue크기+1)*m 이상이면 증설
+
+배운 점: 
+- queue.size()로 현재 운영 중인 서버 수 관리
+- expire 배열 없이 queue front와 현재 시간 차이로 만료 관리 가능
