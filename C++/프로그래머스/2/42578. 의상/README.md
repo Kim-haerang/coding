@@ -106,3 +106,16 @@ face에 해당하는 의상이 crow_mask, blue_sunglasses, smoky_makeup이므로
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+---
+풀이: 
+
+- 카테고리별 의상 수 map에 저장 후 (count+1) 곱한 값에서 1 빼기
+
+배운 점: 
+
+- 각 카테고리에서 안 입는 경우 포함해서 곱한 뒤 전부 안 입는 경우 제외
+
+실수: 
+
+- vector<pair<string,string>> 대신 vector<vector<string>> 써야 함
